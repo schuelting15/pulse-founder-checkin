@@ -1,0 +1,57 @@
+/* Latin and Latin Extended cover every name in the app (Schülting, Água, Ciarán) and keep the single-file build small. */
+@import '@fontsource/arimo/latin-400.css';
+@import '@fontsource/arimo/latin-ext-400.css';
+@import '@fontsource/arimo/latin-500.css';
+@import '@fontsource/arimo/latin-ext-500.css';
+@import '@fontsource/arimo/latin-700.css';
+@import '@fontsource/arimo/latin-ext-700.css';
+@import './tokens.css';
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    background: var(--pulse-bg);
+  }
+  body {
+    @apply bg-bg font-sans text-small text-ink;
+    -webkit-font-smoothing: antialiased;
+    min-height: 100vh;
+  }
+  /* A visible focus style in the accent blue. */
+  :focus-visible {
+    outline: 2px solid var(--pulse-accent);
+    outline-offset: 2px;
+  }
+  ::selection {
+    background: var(--pulse-ink);
+    color: var(--pulse-bg);
+  }
+}
+
+@layer components {
+  /* A cell of the hairline grid that structures every page. */
+  .cell {
+    @apply border-b border-r border-hairline p-cell;
+  }
+  /* A 4px dot on grid intersections. */
+  .cell-dot {
+    position: relative;
+  }
+  .cell-dot::before {
+    content: '';
+    position: absolute;
+    top: -2.5px;
+    left: -2.5px;
+    width: 4px;
+    height: 4px;
+    border-radius: 99px;
+    background: var(--pulse-ink);
+  }
+  .px-page {
+    padding-left: var(--pulse-gutter);
+    padding-right: var(--pulse-gutter);
+  }
+}

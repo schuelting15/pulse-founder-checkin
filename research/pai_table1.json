@@ -1,0 +1,368 @@
+{
+  "source": {
+    "title": "Commission Delegated Regulation (EU) 2022/1288, Annex I",
+    "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:32022R1288",
+    "retrieved": "2026-10-25",
+    "verbatimFields": [
+      "section",
+      "theme",
+      "indicator",
+      "metric"
+    ],
+    "derivedFields": [
+      "fundUnit (when fundUnitBasis is 'formula' or 'implied')",
+      "companyInputs"
+    ]
+  },
+  "referencePeriod": {
+    "period": "annual: 1 January to 31 December of the preceding year",
+    "basis": "Art. 4(1): statement published by 30 June each year, covering 1 January until 31 December of the preceding year.",
+    "averaging": "Art. 6(3): the 'Impact' column is the average of impacts on 31 March, 30 June, 30 September and 31 December."
+  },
+  "indicators": [
+    {
+      "table": "Table 1",
+      "number": 1,
+      "ref": "Table 1, #1",
+      "section": "CLIMATE AND OTHER ENVIRONMENT-RELATED INDICATORS",
+      "theme": "Greenhouse gas emissions",
+      "indicator": "GHG emissions",
+      "metric": [
+        "Scope 1 GHG emissions",
+        "Scope 2 GHG emissions",
+        "Scope 3 GHG emissions",
+        "Total GHG emissions"
+      ],
+      "fundUnit": "tCO2e",
+      "fundUnitBasis": "implied",
+      "fundUnitNote": "Not stated in Table 1. Formula (1) sums investee Scope(x) GHG emissions weighted by current value of investment / enterprise value; GHG emissions are defined via Regulation (EU) 2018/842 (CO2 equivalent), so the unit is tonnes of CO2 equivalent.",
+      "companyInputs": [
+        {
+          "id": "ghg_scope1",
+          "label": "Scope 1 GHG emissions",
+          "unit": "tCO2e",
+          "type": "number"
+        },
+        {
+          "id": "ghg_scope2",
+          "label": "Scope 2 GHG emissions",
+          "unit": "tCO2e",
+          "type": "number"
+        },
+        {
+          "id": "ghg_scope3",
+          "label": "Scope 3 GHG emissions",
+          "unit": "tCO2e",
+          "type": "number"
+        }
+      ]
+    },
+    {
+      "table": "Table 1",
+      "number": 2,
+      "ref": "Table 1, #2",
+      "section": "CLIMATE AND OTHER ENVIRONMENT-RELATED INDICATORS",
+      "theme": "Greenhouse gas emissions",
+      "indicator": "Carbon footprint",
+      "metric": "Carbon footprint",
+      "fundUnit": "tCO2e per EUR million invested",
+      "fundUnitBasis": "formula",
+      "fundUnitNote": "Formula (2): denominator 'current value of all investments (€M)'.",
+      "companyInputs": []
+    },
+    {
+      "table": "Table 1",
+      "number": 3,
+      "ref": "Table 1, #3",
+      "section": "CLIMATE AND OTHER ENVIRONMENT-RELATED INDICATORS",
+      "theme": "Greenhouse gas emissions",
+      "indicator": "GHG intensity of investee companies",
+      "metric": "GHG intensity of investee companies",
+      "fundUnit": "tCO2e per EUR million revenue",
+      "fundUnitBasis": "formula",
+      "fundUnitNote": "Formula (3): investee Scope 1, 2 and 3 GHG emissions / 'investee company's €M revenue', weighted by share of investment value.",
+      "companyInputs": []
+    },
+    {
+      "table": "Table 1",
+      "number": 4,
+      "ref": "Table 1, #4",
+      "section": "CLIMATE AND OTHER ENVIRONMENT-RELATED INDICATORS",
+      "theme": "Greenhouse gas emissions",
+      "indicator": "Exposure to companies active in the fossil fuel sector",
+      "metric": "Share of investments in companies active in the fossil fuel sector",
+      "fundUnit": "%",
+      "fundUnitBasis": "stated",
+      "fundUnitNote": "'Share of investments'.",
+      "companyInputs": [
+        {
+          "id": "fossil_fuel_activity",
+          "label": "Active in the fossil fuel sector",
+          "unit": "yes/no",
+          "type": "boolean"
+        }
+      ]
+    },
+    {
+      "table": "Table 1",
+      "number": 5,
+      "ref": "Table 1, #5",
+      "section": "CLIMATE AND OTHER ENVIRONMENT-RELATED INDICATORS",
+      "theme": "Greenhouse gas emissions",
+      "indicator": "Share of non-renewable energy consumption and production",
+      "metric": "Share of non-renewable energy consumption and non-renewable energy production of investee companies from non-renewable energy sources compared to renewable energy sources, expressed as a percentage of total energy sources",
+      "fundUnit": "%",
+      "fundUnitBasis": "stated",
+      "fundUnitNote": "'expressed as a percentage of total energy sources'.",
+      "companyInputs": [
+        {
+          "id": "energy_cons_renewable",
+          "label": "Renewable energy consumption",
+          "unit": "MWh",
+          "type": "number"
+        },
+        {
+          "id": "energy_cons_nonrenewable",
+          "label": "Non-renewable energy consumption",
+          "unit": "MWh",
+          "type": "number"
+        },
+        {
+          "id": "energy_prod_renewable",
+          "label": "Renewable energy production",
+          "unit": "MWh",
+          "type": "number"
+        },
+        {
+          "id": "energy_prod_nonrenewable",
+          "label": "Non-renewable energy production",
+          "unit": "MWh",
+          "type": "number"
+        }
+      ]
+    },
+    {
+      "table": "Table 1",
+      "number": 6,
+      "ref": "Table 1, #6",
+      "section": "CLIMATE AND OTHER ENVIRONMENT-RELATED INDICATORS",
+      "theme": "Greenhouse gas emissions",
+      "indicator": "Energy consumption intensity per high impact climate sector",
+      "metric": "Energy consumption in GWh per million EUR of revenue of investee companies, per high impact climate sector",
+      "fundUnit": "GWh per million EUR of revenue",
+      "fundUnitBasis": "stated",
+      "fundUnitNote": "Stated in the metric.",
+      "companyInputs": []
+    },
+    {
+      "table": "Table 1",
+      "number": 7,
+      "ref": "Table 1, #7",
+      "section": "CLIMATE AND OTHER ENVIRONMENT-RELATED INDICATORS",
+      "theme": "Biodiversity",
+      "indicator": "Activities negatively affecting biodiversity-sensitive areas",
+      "metric": "Share of investments in investee companies with sites/operations located in or near to biodiversity-sensitive areas where activities of those investee companies negatively affect those areas",
+      "fundUnit": "%",
+      "fundUnitBasis": "stated",
+      "fundUnitNote": "'Share of investments'.",
+      "companyInputs": [
+        {
+          "id": "biodiversity_sensitive_sites",
+          "label": "Sites or operations in or near biodiversity-sensitive areas that negatively affect those areas",
+          "unit": "yes/no",
+          "type": "boolean"
+        }
+      ]
+    },
+    {
+      "table": "Table 1",
+      "number": 8,
+      "ref": "Table 1, #8",
+      "section": "CLIMATE AND OTHER ENVIRONMENT-RELATED INDICATORS",
+      "theme": "Water",
+      "indicator": "Emissions to water",
+      "metric": "Tonnes of emissions to water generated by investee companies per million EUR invested, expressed as a weighted average",
+      "fundUnit": "tonnes per million EUR invested",
+      "fundUnitBasis": "stated",
+      "fundUnitNote": "Stated in the metric.",
+      "companyInputs": [
+        {
+          "id": "emissions_to_water",
+          "label": "Emissions to water",
+          "unit": "tonnes",
+          "type": "number"
+        }
+      ]
+    },
+    {
+      "table": "Table 1",
+      "number": 9,
+      "ref": "Table 1, #9",
+      "section": "CLIMATE AND OTHER ENVIRONMENT-RELATED INDICATORS",
+      "theme": "Waste",
+      "indicator": "Hazardous waste and radioactive waste ratio",
+      "metric": "Tonnes of hazardous waste and radioactive waste generated by investee companies per million EUR invested, expressed as a weighted average",
+      "fundUnit": "tonnes per million EUR invested",
+      "fundUnitBasis": "stated",
+      "fundUnitNote": "Stated in the metric.",
+      "companyInputs": [
+        {
+          "id": "hazardous_radioactive_waste",
+          "label": "Hazardous waste and radioactive waste",
+          "unit": "tonnes",
+          "type": "number"
+        }
+      ]
+    },
+    {
+      "table": "Table 1",
+      "number": 10,
+      "ref": "Table 1, #10",
+      "section": "INDICATORS FOR SOCIAL AND EMPLOYEE, RESPECT FOR HUMAN RIGHTS, ANTI-CORRUPTION AND ANTI-BRIBERY MATTERS",
+      "theme": "Social and employee matters",
+      "indicator": "Violations of UN Global Compact principles and Organisation for Economic Cooperation and Development (OECD) Guidelines for Multinational Enterprises",
+      "metric": "Share of investments in investee companies that have been involved in violations of the UNGC principles or OECD Guidelines for Multinational Enterprises",
+      "fundUnit": "%",
+      "fundUnitBasis": "stated",
+      "fundUnitNote": "'Share of investments'.",
+      "companyInputs": [
+        {
+          "id": "ungc_oecd_violation",
+          "label": "Involved in violations of the UNGC principles or OECD Guidelines for Multinational Enterprises",
+          "unit": "yes/no",
+          "type": "boolean"
+        }
+      ]
+    },
+    {
+      "table": "Table 1",
+      "number": 11,
+      "ref": "Table 1, #11",
+      "section": "INDICATORS FOR SOCIAL AND EMPLOYEE, RESPECT FOR HUMAN RIGHTS, ANTI-CORRUPTION AND ANTI-BRIBERY MATTERS",
+      "theme": "Social and employee matters",
+      "indicator": "Lack of processes and compliance mechanisms to monitor compliance with UN Global Compact principles and OECD Guidelines for Multinational Enterprises",
+      "metric": "Share of investments in investee companies without policies to monitor compliance with the UNGC principles or OECD Guidelines for Multinational Enterprises or grievance/complaints handling mechanisms to address violations of the UNGC principles or OECD Guidelines for Multinational Enterprises",
+      "fundUnit": "%",
+      "fundUnitBasis": "stated",
+      "fundUnitNote": "'Share of investments'.",
+      "companyInputs": [
+        {
+          "id": "ungc_oecd_processes",
+          "label": "Policies to monitor compliance with the UNGC principles or OECD Guidelines, or grievance/complaints handling mechanisms",
+          "unit": "yes/no",
+          "type": "boolean"
+        }
+      ]
+    },
+    {
+      "table": "Table 1",
+      "number": 12,
+      "ref": "Table 1, #12",
+      "section": "INDICATORS FOR SOCIAL AND EMPLOYEE, RESPECT FOR HUMAN RIGHTS, ANTI-CORRUPTION AND ANTI-BRIBERY MATTERS",
+      "theme": "Social and employee matters",
+      "indicator": "Unadjusted gender pay gap",
+      "metric": "Average unadjusted gender pay gap of investee companies",
+      "fundUnit": "%",
+      "fundUnitBasis": "stated",
+      "fundUnitNote": "Annex I definition (23): difference in average gross hourly earnings 'as a percentage of average gross hourly earnings of male paid employees'.",
+      "companyInputs": [
+        {
+          "id": "gender_pay_gap",
+          "label": "Unadjusted gender pay gap",
+          "unit": "%",
+          "type": "number"
+        }
+      ]
+    },
+    {
+      "table": "Table 1",
+      "number": 13,
+      "ref": "Table 1, #13",
+      "section": "INDICATORS FOR SOCIAL AND EMPLOYEE, RESPECT FOR HUMAN RIGHTS, ANTI-CORRUPTION AND ANTI-BRIBERY MATTERS",
+      "theme": "Social and employee matters",
+      "indicator": "Board gender diversity",
+      "metric": "Average ratio of female to male board members in investee companies, expressed as a percentage of all board members",
+      "fundUnit": "%",
+      "fundUnitBasis": "stated",
+      "fundUnitNote": "'expressed as a percentage of all board members'.",
+      "companyInputs": [
+        {
+          "id": "board_female",
+          "label": "Female board members",
+          "unit": "count",
+          "type": "integer"
+        },
+        {
+          "id": "board_male",
+          "label": "Male board members",
+          "unit": "count",
+          "type": "integer"
+        },
+        {
+          "id": "board_nonbinary",
+          "label": "Non-binary board members",
+          "unit": "count",
+          "type": "integer"
+        }
+      ]
+    },
+    {
+      "table": "Table 1",
+      "number": 14,
+      "ref": "Table 1, #14",
+      "section": "INDICATORS FOR SOCIAL AND EMPLOYEE, RESPECT FOR HUMAN RIGHTS, ANTI-CORRUPTION AND ANTI-BRIBERY MATTERS",
+      "theme": "Social and employee matters",
+      "indicator": "Exposure to controversial weapons (anti-personnel mines, cluster munitions, chemical weapons and biological weapons)",
+      "metric": "Share of investments in investee companies involved in the manufacture or selling of controversial weapons",
+      "fundUnit": "%",
+      "fundUnitBasis": "stated",
+      "fundUnitNote": "'Share of investments'.",
+      "companyInputs": [
+        {
+          "id": "controversial_weapons",
+          "label": "Involved in the manufacture or selling of controversial weapons",
+          "unit": "yes/no",
+          "type": "boolean"
+        }
+      ]
+    }
+  ],
+  "optionalIndicators": [
+    {
+      "table": "Table 2",
+      "number": 4,
+      "ref": "Table 2, #4",
+      "indicator": "Investments in companies without carbon emission reduction initiatives",
+      "metric": "Share of investments in investee companies without carbon emission reduction initiatives aimed at aligning with the Paris Agreement",
+      "fundUnit": "%",
+      "fundUnitBasis": "stated",
+      "fundUnitNote": "'Share of investments'.",
+      "companyInputs": [
+        {
+          "id": "carbon_reduction_initiative",
+          "label": "Carbon emission reduction initiatives aimed at aligning with the Paris Agreement",
+          "unit": "yes/no",
+          "type": "boolean"
+        }
+      ]
+    },
+    {
+      "table": "Table 3",
+      "number": 4,
+      "ref": "Table 3, #4",
+      "indicator": "Lack of a supplier code of conduct",
+      "metric": "Share of investments in investee companies without any supplier code of conduct (against unsafe working conditions, precarious work, child labour and forced labour)",
+      "fundUnit": "%",
+      "fundUnitBasis": "stated",
+      "fundUnitNote": "'Share of investments'.",
+      "companyInputs": [
+        {
+          "id": "supplier_code_of_conduct",
+          "label": "Supplier code of conduct in place",
+          "unit": "yes/no",
+          "type": "boolean"
+        }
+      ]
+    }
+  ]
+}

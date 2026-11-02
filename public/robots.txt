@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+# Crawling is allowed so that crawlers can read the noindex, nofollow meta tag on every page.

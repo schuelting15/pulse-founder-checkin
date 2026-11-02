@@ -1,0 +1,11 @@
+research/sources/
+node_modules/
+dist/
+.env*
+*.local
+test-results/
+playwright-report/
+.DS_Store
+dist-single/
+coverage/
+__pycache__/
